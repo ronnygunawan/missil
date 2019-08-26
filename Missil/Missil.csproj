@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <PackageId>RG.Missil</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Ronny Gunawan</Authors>
+    <Product>RG.Missil</Product>
+    <Description>Missil is a set of extension method for chaining ILGenerator.Emit(OpCode) calls.</Description>
+    <PackageProjectUrl>https://github.com/ronnygunawan/missil</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ronnygunawan/missil</RepositoryUrl>
+    <PackageTags>missil msil il assembly reflection emit</PackageTags>
+    <Copyright>(c) 2019 Ronny Gunawan</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentAssertions" Version="5.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
