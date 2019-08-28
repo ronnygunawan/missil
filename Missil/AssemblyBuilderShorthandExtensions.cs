@@ -20,7 +20,7 @@ namespace Missil {
 			TypeBuilder typeBuilder = moduleBuilder.DefineType(
 				name: name,
 				attr: TypeAttributes.Public | TypeAttributes.Class | TypeAttributes.AutoClass | TypeAttributes.AnsiClass | TypeAttributes.BeforeFieldInit | TypeAttributes.AutoLayout,
-				parent: null,
+				parent: parent,
 				interfaces: interfaces);
 			return typeBuilder;
 		}

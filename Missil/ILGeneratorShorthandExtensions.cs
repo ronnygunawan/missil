@@ -600,6 +600,7 @@ namespace Missil {
 			return ilGenerator;
 		}
 
+#if NETCOREAPP3_0
 		/// <summary>
 		/// Calls the method indicated on the evaluation stack (as a pointer to an entry point) with arguments described by a calling convention.
 		/// </summary>
@@ -608,6 +609,7 @@ namespace Missil {
 			ilGenerator.EmitCalli(OpCodes.Calli, unmanagedCallConv, returnType, parameterTypes);
 			return ilGenerator;
 		}
+#endif
 
 		/// <summary>
 		/// Calls a late-bound method on an object, pushing the return value onto the evaluation stack.
