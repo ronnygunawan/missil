@@ -8,6 +8,42 @@ namespace Missil {
 	public static class ILGeneratorShorthandExtensions {
 
 		/// <summary>
+		/// Declares a local variable of the specified type.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator DeclareLocal(this ILGenerator ilGenerator, Type localType, out LocalBuilder local) {
+			local = ilGenerator.DeclareLocal(localType);
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Declares a local variable of the specified type.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator DeclareLocal<T>(this ILGenerator ilGenerator, out LocalBuilder local) {
+			local = ilGenerator.DeclareLocal(typeof(T));
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Declares a local variable of the specified type, optionally pinning the object referred to by the variable.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator DeclareLocal(this ILGenerator ilGenerator, Type localType, out LocalBuilder local, bool pinned) {
+			local = ilGenerator.DeclareLocal(localType, pinned);
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Declares a local variable of the specified type, optionally pinning the object referred to by the variable.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator DeclareLocal<T>(this ILGenerator ilGenerator, out LocalBuilder local, bool pinned) {
+			local = ilGenerator.DeclareLocal(typeof(T), pinned);
+			return ilGenerator;
+		}
+
+		/// <summary>
 		/// Adds two values and pushes the result onto the evaluation stack.
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -600,7 +636,7 @@ namespace Missil {
 			return ilGenerator;
 		}
 
-#if NETCOREAPP3_0
+#if !NETSTANDARD2_0
 		/// <summary>
 		/// Calls the method indicated on the evaluation stack (as a pointer to an entry point) with arguments described by a calling convention.
 		/// </summary>
