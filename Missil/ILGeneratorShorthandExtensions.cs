@@ -44,6 +44,23 @@ namespace Missil {
 		}
 
 		/// <summary>
+		/// Marks the Microsoft intermediate language (MSIL) stream&#39;s current position with the given label.
+		/// </summary>
+		public static ILGenerator MarkLabel(this ILGenerator ilGenerator, out Label loc) {
+			loc = ilGenerator.DefineLabel();
+			ilGenerator.MarkLabel(loc);
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Marks the Microsoft intermediate language (MSIL) stream&#39;s current position with the given label.
+		/// </summary>
+		public static ILGenerator MarkLabel(this ILGenerator ilGenerator, Label loc) {
+			ilGenerator.MarkLabel(loc);
+			return ilGenerator;
+		}
+
+		/// <summary>
 		/// Adds two values and pushes the result onto the evaluation stack.
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
