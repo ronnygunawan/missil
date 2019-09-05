@@ -24,12 +24,12 @@
             Declares a local variable of the specified type, optionally pinning the object referred to by the variable.
             </summary>
         </member>
-        <member name="M:Missil.ILGeneratorShorthandExtensions.MarkLabel(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Label(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
             <summary>
             Marks the Microsoft intermediate language (MSIL) stream&#39;s current position with the given label.
             </summary>
         </member>
-        <member name="M:Missil.ILGeneratorShorthandExtensions.MarkLabel(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Label(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
             <summary>
             Marks the Microsoft intermediate language (MSIL) stream&#39;s current position with the given label.
             </summary>

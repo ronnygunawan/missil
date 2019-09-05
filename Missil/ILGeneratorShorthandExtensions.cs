@@ -46,7 +46,7 @@ namespace Missil {
 		/// <summary>
 		/// Marks the Microsoft intermediate language (MSIL) stream&#39;s current position with the given label.
 		/// </summary>
-		public static ILGenerator MarkLabel(this ILGenerator ilGenerator, out Label loc) {
+		public static ILGenerator Label(this ILGenerator ilGenerator, out Label loc) {
 			loc = ilGenerator.DefineLabel();
 			ilGenerator.MarkLabel(loc);
 			return ilGenerator;
@@ -55,7 +55,7 @@ namespace Missil {
 		/// <summary>
 		/// Marks the Microsoft intermediate language (MSIL) stream&#39;s current position with the given label.
 		/// </summary>
-		public static ILGenerator MarkLabel(this ILGenerator ilGenerator, Label loc) {
+		public static ILGenerator Label(this ILGenerator ilGenerator, Label loc) {
 			ilGenerator.MarkLabel(loc);
 			return ilGenerator;
 		}
