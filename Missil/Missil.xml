@@ -1,0 +1,1434 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Missil</name>
+    </assembly>
+    <members>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.DeclareLocal(System.Reflection.Emit.ILGenerator,System.Type,System.Reflection.Emit.LocalBuilder@)">
+            <summary>
+            Declares a local variable of the specified type.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.DeclareLocal``1(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.LocalBuilder@)">
+            <summary>
+            Declares a local variable of the specified type.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.DeclareLocal(System.Reflection.Emit.ILGenerator,System.Type,System.Reflection.Emit.LocalBuilder@,System.Boolean)">
+            <summary>
+            Declares a local variable of the specified type, optionally pinning the object referred to by the variable.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.DeclareLocal``1(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.LocalBuilder@,System.Boolean)">
+            <summary>
+            Declares a local variable of the specified type, optionally pinning the object referred to by the variable.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.MarkLabel(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Marks the Microsoft intermediate language (MSIL) stream&#39;s current position with the given label.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.MarkLabel(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Marks the Microsoft intermediate language (MSIL) stream&#39;s current position with the given label.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Add(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Adds two values and pushes the result onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Add_Ovf(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Adds two integers, performs an overflow check, and pushes the result onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Add_Ovf_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Adds two unsigned integer values, performs an overflow check, and pushes the result onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.And(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Computes the bitwise AND of two values and pushes the result onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Arglist(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Returns an unmanaged pointer to the argument list of the current method.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Beq(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction if two values are equal.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Beq(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction if two values are equal.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Beq_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction (short form) if two values are equal.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Beq_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction (short form) if two values are equal.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bge(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction if the first value is greater than or equal to the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bge(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction if the first value is greater than or equal to the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bge_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is greater than or equal to the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bge_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is greater than or equal to the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bge_Un(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction if the first value is greater than the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bge_Un(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction if the first value is greater than the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bge_Un_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is greater than the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bge_Un_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is greater than the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bgt(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction if the first value is greater than the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bgt(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction if the first value is greater than the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bgt_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is greater than the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bgt_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is greater than the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bgt_Un(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction if the first value is greater than the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bgt_Un(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction if the first value is greater than the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bgt_Un_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is greater than the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bgt_Un_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is greater than the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ble(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction if the first value is less than or equal to the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ble(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction if the first value is less than or equal to the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ble_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is less than or equal to the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ble_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is less than or equal to the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ble_Un(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction if the first value is less than or equal to the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ble_Un(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction if the first value is less than or equal to the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ble_Un_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is less than or equal to the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ble_Un_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is less than or equal to the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Blt(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction if the first value is less than the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Blt(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction if the first value is less than the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Blt_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is less than the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Blt_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is less than the second value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Blt_Un(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction if the first value is less than the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Blt_Un(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction if the first value is less than the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Blt_Un_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is less than the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Blt_Un_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction (short form) if the first value is less than the second value, when comparing unsigned integer values or unordered float values.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bne_Un(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction when two unsigned integer values or unordered float values are not equal.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bne_Un(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction when two unsigned integer values or unordered float values are not equal.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bne_Un_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction (short form) when two unsigned integer values or unordered float values are not equal.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Bne_Un_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction (short form) when two unsigned integer values or unordered float values are not equal.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Box(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Converts a value type to an object reference (type O).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Box``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts a value type to an object reference (type O).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Br(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Unconditionally transfers control to a target instruction.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Br(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Unconditionally transfers control to a target instruction.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Br_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Unconditionally transfers control to a target instruction (short form).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Br_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Unconditionally transfers control to a target instruction (short form).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Break(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Signals the Common Language Infrastructure (CLI) to inform the debugger that a break point has been tripped.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Brfalse(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction if value is false, a null reference (Nothing in Visual Basic), or zero.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Brfalse(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction if value is false, a null reference (Nothing in Visual Basic), or zero.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Brfalse_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction if value is false, a null reference, or zero.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Brfalse_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction if value is false, a null reference, or zero.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Brtrue(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction if value is true, not null, or non-zero.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Brtrue(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction if value is true, not null, or non-zero.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Brtrue_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Transfers control to a target instruction (short form) if value is true, not null, or non-zero.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Brtrue_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Transfers control to a target instruction (short form) if value is true, not null, or non-zero.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Call(System.Reflection.Emit.ILGenerator,System.Reflection.MethodInfo)">
+            <summary>
+            Calls the method indicated by the passed method descriptor.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Call(System.Reflection.Emit.ILGenerator,System.Reflection.MethodInfo,System.Type[])">
+            <summary>
+            Calls the method indicated by the passed method descriptor.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Calli(System.Reflection.Emit.ILGenerator,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type[])">
+            <summary>
+            Calls the method indicated on the evaluation stack (as a pointer to an entry point) with arguments described by a calling convention.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Calli(System.Reflection.Emit.ILGenerator,System.Runtime.InteropServices.CallingConvention,System.Type,System.Type[])">
+            <summary>
+            Calls the method indicated on the evaluation stack (as a pointer to an entry point) with arguments described by a calling convention.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Callvirt(System.Reflection.Emit.ILGenerator,System.Reflection.MethodInfo)">
+            <summary>
+            Calls a late-bound method on an object, pushing the return value onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Callvirt(System.Reflection.Emit.ILGenerator,System.Reflection.MethodInfo,System.Type[])">
+            <summary>
+            Calls a late-bound method on an object, pushing the return value onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Castclass(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Attempts to cast an object passed by reference to the specified class.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Castclass``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Attempts to cast an object passed by reference to the specified class.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ceq(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Compares two values. If they are equal, the integer value 1 (int32) is pushed onto the evaluation stack; otherwise 0 (int32) is pushed onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Cgt(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Compares two values. If the first value is greater than the second, the integer value 1 (int32) is pushed onto the evaluation stack; otherwise 0 (int32) is pushed onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Cgt_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Compares two unsigned or unordered values. If the first value is greater than the second, the integer value 1 (int32) is pushed onto the evaluation stack; otherwise 0 (int32) is pushed onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ckfinite(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Throws ArithmeticException if value is not a finite number.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Clt(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Compares two values. If the first value is less than the second, the integer value 1 (int32) is pushed onto the evaluation stack; otherwise 0 (int32) is pushed onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Clt_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Compares the unsigned or unordered values value1 and value2. If value1 is less than value2, then the integer value 1 (int32) is pushed onto the evaluation stack; otherwise 0 (int32) is pushed onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Constrained(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Constrains the type on which a virtual method call is made.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Constrained``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Constrains the type on which a virtual method call is made.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_I(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the value on top of the evaluation stack to native int.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_I1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the value on top of the evaluation stack to int8, then extends (pads) it to int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_I2(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the value on top of the evaluation stack to int16, then extends (pads) it to int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_I4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the value on top of the evaluation stack to int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_I8(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the value on top of the evaluation stack to int64.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_I(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the signed value on top of the evaluation stack to signed native int, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_I_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the signed value on top of the evaluation stack to signed native int, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_I1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the signed value on top of the evaluation stack to signed int8 and extends it to int32, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_I1_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the unsigned value on top of the evaluation stack to signed int8 and extends it to int32, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_I2(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the signed value on top of the evaluation stack to signed int16 and extending it to int32, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_I2_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the unsigned value on top of the evaluation stack to signed int16 and extends it to int32, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_I4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the signed value on top of the evaluation stack to signed int32, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_I4_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the unsigned value on top of the evaluation stack to signed int32, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_I8(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the signed value on top of the evaluation stack to signed int64, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_I8_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the unsigned value on top of the evaluation stack to signed int64, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_U(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the signed value on top of the evaluation stack to unsigned native int, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_U_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the unsigned value on top of the evaluation stack to unsigned native int, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_U1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the signed value on top of the evaluation stack to unsigned int8 and extends it to int32, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_U1_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the unsigned value on top of the evaluation stack to unsigned int8 and extends it to int32, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_U2(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the signed value on top of the evaluation stack to unsigned int16 and extends it to int32, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_U2_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the unsigned value on top of the evaluation stack to unsigned int16 and extends it to int32, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_U4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the signed value on top of the evaluation stack to unsigned int32, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_U4_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the unsigned value on top of the evaluation stack to unsigned int32, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_U8(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the signed value on top of the evaluation stack to unsigned int64, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_Ovf_U8_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the unsigned value on top of the evaluation stack to unsigned int64, throwing OverflowException on overflow.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_R_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the unsigned integer value on top of the evaluation stack to float32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_R4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the value on top of the evaluation stack to float32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_R8(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the value on top of the evaluation stack to float64.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_U(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the value on top of the evaluation stack to unsigned native int, and extends it to native int.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_U1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the value on top of the evaluation stack to unsigned native int, and extends it to native int.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_U2(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the value on top of the evaluation stack to unsigned int16, and extends it to int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_U4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the value on top of the evaluation stack to unsigned int32, and extends it to int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Conv_U8(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the value on top of the evaluation stack to unsigned int64, and extends it to int64.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Cpblk(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Copies a specified number bytes from a source address to a destination address.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Missil.ILGeneratorShorthandExtensions.Cpobj(System.Reflection.Emit.ILGenerator,System.Type)" -->
+        <!-- Badly formed XML comment ignored for member "M:Missil.ILGeneratorShorthandExtensions.Cpobj``1(System.Reflection.Emit.ILGenerator)" -->
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Div(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Divides two values and pushes the result as a floating-point (type F) or quotient (type int32) onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Div_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Divides two unsigned integer values and pushes the result (int32) onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Dup(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Copies the current topmost value on the evaluation stack, and then pushes the copy onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Endfilter(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Transfers control from the filter clause of an exception back to the Common Language Infrastructure (CLI) exception handler.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Endfinally(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Transfers control from the fault or finally clause of an exception block back to the Common Language Infrastructure (CLI) exception handler.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Initblk(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Initializes a specified block of memory at a specific address to a given size and initial value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Initobj(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Initializes each field of the value type at a specified address to a null reference or a 0 of the appropriate primitive type.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Initobj``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Initializes each field of the value type at a specified address to a null reference or a 0 of the appropriate primitive type.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Isinst(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Tests whether an object reference (type O) is an instance of a particular class.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Isinst``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Tests whether an object reference (type O) is an instance of a particular class.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Jmp(System.Reflection.Emit.ILGenerator,System.Reflection.MethodInfo)">
+            <summary>
+            Exits current method and jumps to specified method.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldarg(System.Reflection.Emit.ILGenerator,System.Int16)">
+            <summary>
+            Loads an argument (referenced by a specified index value) onto the stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldarg_X(System.Reflection.Emit.ILGenerator,System.Int16)">
+            <summary>
+            Loads an argument (referenced by a specified index value) onto the stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldarg_0(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the argument at index 0 onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldarg_1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the argument at index 1 onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldarg_2(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the argument at index 2 onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldarg_3(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the argument at index 3 onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldarg_S(System.Reflection.Emit.ILGenerator,System.Byte)">
+            <summary>
+            Loads the argument (referenced by a specified short form index) onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldarga(System.Reflection.Emit.ILGenerator,System.Int16)">
+            <summary>
+            Load an argument address onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldarga_S(System.Reflection.Emit.ILGenerator,System.Byte)">
+            <summary>
+            Load an argument address, in short form, onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_I4(System.Reflection.Emit.ILGenerator,System.Int32)">
+            <summary>
+            Pushes a supplied value of type int32 onto the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_I4_X(System.Reflection.Emit.ILGenerator,System.Int32)">
+            <summary>
+            Pushes a supplied value of type int32 onto the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_I4_0(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pushes the integer value of 0 onto the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_I4_1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pushes the integer value of 1 onto the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_I4_2(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pushes the integer value of 2 onto the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_I4_3(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pushes the integer value of 3 onto the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_I4_4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pushes the integer value of 4 onto the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_I4_5(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pushes the integer value of 5 onto the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_I4_6(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pushes the integer value of 6 onto the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_I4_7(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pushes the integer value of 7 onto the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_I4_8(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pushes the integer value of 8 onto the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_I4_M1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pushes the integer value of -1 onto the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_I4_S(System.Reflection.Emit.ILGenerator,System.Byte)">
+            <summary>
+            Pushes the supplied int8 value onto the evaluation stack as an int32, short form.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_I8(System.Reflection.Emit.ILGenerator,System.Int64)">
+            <summary>
+            Pushes a supplied value of type int64 onto the evaluation stack as an int64.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_R4(System.Reflection.Emit.ILGenerator,System.Single)">
+            <summary>
+            Pushes a supplied value of type float32 onto the evaluation stack as type F (float).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldc_R8(System.Reflection.Emit.ILGenerator,System.Double)">
+            <summary>
+            Pushes a supplied value of type float64 onto the evaluation stack as type F (float).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldelem(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Loads the element at a specified array index onto the top of the evaluation stack as the type specified in the instruction.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldelem``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the element at a specified array index onto the top of the evaluation stack as the type specified in the instruction.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldelem_I(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the element with type native int at a specified array index onto the top of the evaluation stack as a native int.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldelem_I1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the element with type int8 at a specified array index onto the top of the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldelem_I2(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the element with type int16 at a specified array index onto the top of the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldelem_I4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the element with type int32 at a specified array index onto the top of the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldelem_I8(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the element with type int64 at a specified array index onto the top of the evaluation stack as an int64.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldelem_R4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the element with type float32 at a specified array index onto the top of the evaluation stack as type F (float).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldelem_R8(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the element with type float64 at a specified array index onto the top of the evaluation stack as type F (float).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldelem_Ref(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the element containing an object reference at a specified array index onto the top of the evaluation stack as type O (object reference).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldelem_U1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the element with type unsigned int8 at a specified array index onto the top of the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldelem_U2(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the element with type unsigned int16 at a specified array index onto the top of the evaluation stack as an int32.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldelem_U4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the element with type unsigned int32 at a specified array index onto the top of the evaluation stack as an int32.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Missil.ILGeneratorShorthandExtensions.Ldelema(System.Reflection.Emit.ILGenerator,System.Type)" -->
+        <!-- Badly formed XML comment ignored for member "M:Missil.ILGeneratorShorthandExtensions.Ldelema``1(System.Reflection.Emit.ILGenerator)" -->
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldfld(System.Reflection.Emit.ILGenerator,System.Reflection.FieldInfo)">
+            <summary>
+            Finds the value of a field in the object whose reference is currently on the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldflda(System.Reflection.Emit.ILGenerator,System.Reflection.FieldInfo)">
+            <summary>
+            Finds the address of a field in the object whose reference is currently on the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldftn(System.Reflection.Emit.ILGenerator,System.Reflection.MethodInfo)">
+            <summary>
+            Pushes an unmanaged pointer (type native int) to the native code implementing a specific method onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldind_I(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads a value of type native int as a native int onto the evaluation stack indirectly.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldind_I1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads a value of type int8 as an int32 onto the evaluation stack indirectly.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldind_I2(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads a value of type int16 as an int32 onto the evaluation stack indirectly.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldind_I4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads a value of type int32 as an int32 onto the evaluation stack indirectly.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldind_I8(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads a value of type int64 as an int64 onto the evaluation stack indirectly.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldind_R4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads a value of type float32 as a type F (float) onto the evaluation stack indirectly.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldind_R8(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads a value of type float64 as a type F (float) onto the evaluation stack indirectly.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldind_Ref(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads an object reference as a type O (object reference) onto the evaluation stack indirectly.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldind_U1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads a value of type unsigned int8 as an int32 onto the evaluation stack indirectly.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldind_U2(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads a value of type unsigned int16 as an int32 onto the evaluation stack indirectly.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldind_U4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads a value of type unsigned int32 as an int32 onto the evaluation stack indirectly.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldlen(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pushes the number of elements of a zero-based, one-dimensional array onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloc(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.LocalBuilder)">
+            <summary>
+            Loads the local variable at a specific index onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloc(System.Reflection.Emit.ILGenerator,System.Int16)">
+            <summary>
+            Loads the local variable at a specific index onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloc_X(System.Reflection.Emit.ILGenerator,System.Int16)">
+            <summary>
+            Loads the local variable at a specific index onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloc_0(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the local variable at index 0 onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloc_1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the local variable at index 1 onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloc_2(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the local variable at index 2 onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloc_3(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the local variable at index 3 onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloc_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.LocalBuilder)">
+            <summary>
+            Loads the local variable at a specific index onto the evaluation stack, short form.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloc_S(System.Reflection.Emit.ILGenerator,System.Byte)">
+            <summary>
+            Loads the local variable at a specific index onto the evaluation stack, short form.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloca(System.Reflection.Emit.ILGenerator,System.Int16)">
+            <summary>
+            Loads the address of the local variable at a specific index onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloca_S(System.Reflection.Emit.ILGenerator,System.Byte)">
+            <summary>
+            Loads the address of the local variable at a specific index onto the evaluation stack, short form.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldnull(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pushes a null reference (type O) onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldobj(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Copies the value type object pointed to by an address to the top of the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldobj``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Copies the value type object pointed to by an address to the top of the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldsfld(System.Reflection.Emit.ILGenerator,System.Reflection.FieldInfo)">
+            <summary>
+            Pushes the value of a static field onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldsflda(System.Reflection.Emit.ILGenerator,System.Reflection.FieldInfo)">
+            <summary>
+            Pushes the address of a static field onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldstr(System.Reflection.Emit.ILGenerator,System.String)">
+            <summary>
+            Pushes a new object reference to a string literal stored in the metadata.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldtoken(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Converts a metadata token to its runtime representation, pushing it onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldtoken``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts a metadata token to its runtime representation, pushing it onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldtoken(System.Reflection.Emit.ILGenerator,System.Reflection.MethodInfo)">
+            <summary>
+            Converts a metadata token to its runtime representation, pushing it onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldtoken(System.Reflection.Emit.ILGenerator,System.Reflection.FieldInfo)">
+            <summary>
+            Converts a metadata token to its runtime representation, pushing it onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldvirtftn(System.Reflection.Emit.ILGenerator,System.Reflection.MethodInfo)">
+            <summary>
+            Pushes an unmanaged pointer (type native int) to the native code implementing a particular virtual method associated with a specified object onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Leave(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Exits a protected region of code, unconditionally transferring control to a specific target instruction.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Leave(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Exits a protected region of code, unconditionally transferring control to a specific target instruction.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Leave_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Exits a protected region of code, unconditionally transferring control to a target instruction (short form).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Leave_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Exits a protected region of code, unconditionally transferring control to a target instruction (short form).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Localloc(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Allocates a certain number of bytes from the local dynamic memory pool and pushes the address (a transient pointer, type *) of the first allocated byte onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Mkrefany(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Pushes a typed reference to an instance of a specific type onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Mkrefany``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pushes a typed reference to an instance of a specific type onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Mul(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Multiplies two values and pushes the result on the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Mul_Ovf(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Multiplies two integer values, performs an overflow check, and pushes the result onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Mul_Ovf_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Multiplies two unsigned integer values, performs an overflow check, and pushes the result onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Neg(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Negates a value and pushes the result onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Newarr(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Pushes an object reference to a new zero-based, one-dimensional array whose elements are of a specific type onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Newarr``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pushes an object reference to a new zero-based, one-dimensional array whose elements are of a specific type onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Newobj(System.Reflection.Emit.ILGenerator,System.Reflection.ConstructorInfo)">
+            <summary>
+            Creates a new object or a new instance of a value type, pushing an object reference (type O) onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Nop(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Fills space if opcodes are patched. No meaningful operation is performed although a processing cycle can be consumed.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Not(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Computes the bitwise complement of the integer value on top of the stack and pushes the result onto the evaluation stack as the same type.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Or(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Compute the bitwise complement of the two integer values on top of the stack and pushes the result onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Pop(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Removes the value currently on top of the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Refanytype(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Retrieves the type token embedded in a typed reference.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Missil.ILGeneratorShorthandExtensions.Refanyval(System.Reflection.Emit.ILGenerator,System.Type)" -->
+        <!-- Badly formed XML comment ignored for member "M:Missil.ILGeneratorShorthandExtensions.Refanyval``1(System.Reflection.Emit.ILGenerator)" -->
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Rem(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Divides two values and pushes the remainder onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Rem_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Divides two unsigned values and pushes the remainder onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ret(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Returns from the current method, pushing a return value (if present) from the callee's evaluation stack onto the caller's evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Rethrow(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Rethrows the current exception.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Shl(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Shifts an integer value to the left (in zeroes) by a specified number of bits, pushing the result onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Shr(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Shifts an integer value (in sign) to the right by a specified number of bits, pushing the result onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Shr_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Shifts an unsigned integer value (in zeroes) to the right by a specified number of bits, pushing the result onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Sizeof(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Pushes the size, in bytes, of a supplied value type onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Sizeof``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pushes the size, in bytes, of a supplied value type onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Starg(System.Reflection.Emit.ILGenerator,System.Int16)">
+            <summary>
+            Stores the value on top of the evaluation stack in the argument slot at a specified index.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Starg_S(System.Reflection.Emit.ILGenerator,System.Byte)">
+            <summary>
+            Stores the value on top of the evaluation stack in the argument slot at a specified index, short form.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stelem(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Replaces the array element at a given index with the value on the evaluation stack, whose type is specified in the instruction.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stelem``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Replaces the array element at a given index with the value on the evaluation stack, whose type is specified in the instruction.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stelem_I(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Replaces the array element at a given index with the native int value on the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stelem_I1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Replaces the array element at a given index with the int8 value on the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stelem_I2(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Replaces the array element at a given index with the int16 value on the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stelem_I4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Replaces the array element at a given index with the int32 value on the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stelem_I8(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Replaces the array element at a given index with the int64 value on the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stelem_R4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Replaces the array element at a given index with the float32 value on the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stelem_R8(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Replaces the array element at a given index with the float64 value on the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stelem_Ref(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Replaces the array element at a given index with the object ref value (type O) on the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stfld(System.Reflection.Emit.ILGenerator,System.Reflection.FieldInfo)">
+            <summary>
+            Replaces the value stored in the field of an object reference or pointer with a new value.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stind_I(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Stores a value of type native int at a supplied address.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stind_I1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Stores a value of type int8 at a supplied address.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stind_I2(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Stores a value of type int16 at a supplied address.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stind_I4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Stores a value of type int32 at a supplied address.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stind_I8(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Stores a value of type int64 at a supplied address.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stind_R4(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Stores a value of type float32 at a supplied address.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stind_R8(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Stores a value of type float64 at a supplied address.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stind_Ref(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Stores a object reference value at a supplied address.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stloc(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.LocalBuilder)">
+            <summary>
+            Pops the current value from the top of the evaluation stack and stores it in a the local variable list at a specified index.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stloc(System.Reflection.Emit.ILGenerator,System.Int16)">
+            <summary>
+            Pops the current value from the top of the evaluation stack and stores it in a the local variable list at a specified index.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stloc_X(System.Reflection.Emit.ILGenerator,System.Int16)">
+            <summary>
+            Pops the current value from the top of the evaluation stack and stores it in a the local variable list at a specified index.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stloc_0(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pops the current value from the top of the evaluation stack and stores it in a the local variable list at index 0.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stloc_1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pops the current value from the top of the evaluation stack and stores it in a the local variable list at index 1.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stloc_2(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pops the current value from the top of the evaluation stack and stores it in a the local variable list at index 2.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stloc_3(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Pops the current value from the top of the evaluation stack and stores it in a the local variable list at index 3.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stloc_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.LocalBuilder)">
+            <summary>
+            Pops the current value from the top of the evaluation stack and stores it in a the local variable list at index (short form).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stloc_S(System.Reflection.Emit.ILGenerator,System.Byte)">
+            <summary>
+            Pops the current value from the top of the evaluation stack and stores it in a the local variable list at index (short form).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stobj(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Copies a value of a specified type from the evaluation stack into a supplied memory address.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stobj``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Copies a value of a specified type from the evaluation stack into a supplied memory address.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stsfld(System.Reflection.Emit.ILGenerator,System.Reflection.FieldInfo)">
+            <summary>
+            Replaces the value of a static field with a value from the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Sub(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Subtracts one value from another and pushes the result onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Sub_Ovf(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Subtracts one integer value from another, performs an overflow check, and pushes the result onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Sub_Ovf_Un(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Subtracts one unsigned integer value from another, performs an overflow check, and pushes the result onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Switch(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label[])">
+            <summary>
+            Implements a jump table.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Switch(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Implements a jump table.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Switch(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@,System.Reflection.Emit.Label@)">
+            <summary>
+            Implements a jump table.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Switch(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@,System.Reflection.Emit.Label@,System.Reflection.Emit.Label@)">
+            <summary>
+            Implements a jump table.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Switch(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@,System.Reflection.Emit.Label@,System.Reflection.Emit.Label@,System.Reflection.Emit.Label@)">
+            <summary>
+            Implements a jump table.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Switch(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@,System.Reflection.Emit.Label@,System.Reflection.Emit.Label@,System.Reflection.Emit.Label@,System.Reflection.Emit.Label@)">
+            <summary>
+            Implements a jump table.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Switch(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@,System.Reflection.Emit.Label@,System.Reflection.Emit.Label@,System.Reflection.Emit.Label@,System.Reflection.Emit.Label@,System.Reflection.Emit.Label@)">
+            <summary>
+            Implements a jump table.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Tailcall(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Performs a postfixed method call instruction such that the current method's stack frame is removed before the actual call instruction is executed.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Throw(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Throws the exception object currently on the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Unaligned(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label)">
+            <summary>
+            Indicates that an address currently atop the evaluation stack might not be aligned to the natural size of the immediately following ldind, stind, ldfld, stfld, ldobj, stobj, initblk, or cpblk instruction.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Unaligned(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.Label@)">
+            <summary>
+            Indicates that an address currently atop the evaluation stack might not be aligned to the natural size of the immediately following ldind, stind, ldfld, stfld, ldobj, stobj, initblk, or cpblk instruction.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Unaligned(System.Reflection.Emit.ILGenerator,System.Byte)">
+            <summary>
+            Indicates that an address currently atop the evaluation stack might not be aligned to the natural size of the immediately following ldind, stind, ldfld, stfld, ldobj, stobj, initblk, or cpblk instruction.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Unbox(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Converts the boxed representation of a value type to its unboxed form.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Unbox``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the boxed representation of a value type to its unboxed form.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Unbox_Any(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Converts the boxed representation of a type specified in the instruction to its unboxed form.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Unbox_Any``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Converts the boxed representation of a type specified in the instruction to its unboxed form.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Volatile(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Specifies that an address currently atop the evaluation stack might be volatile, and the results of reading that location cannot be cached or that multiple stores to that location cannot be suppressed.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Xor(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Computes the bitwise XOR of the top two values on the evaluation stack, pushing the result onto the evaluation stack.
+            </summary>
+        </member>
+    </members>
+</doc>
