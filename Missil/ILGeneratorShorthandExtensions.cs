@@ -1730,6 +1730,15 @@ namespace Missil {
 		/// Loads the local variable at a specific index onto the evaluation stack.
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator Ldloc(this ILGenerator ilGenerator, int arg) {
+			ilGenerator.Emit(OpCodes.Ldloc, arg);
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Loads the local variable at a specific index onto the evaluation stack.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Ldloc_X(this ILGenerator ilGenerator, short arg) {
 			switch (arg) {
 				case 0: ilGenerator.Emit(OpCodes.Ldloc_0); break;
@@ -1796,6 +1805,24 @@ namespace Missil {
 		}
 
 		/// <summary>
+		/// Loads the local variable at a specific index onto the evaluation stack, short form.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator Ldloc_S(this ILGenerator ilGenerator, int arg) {
+			ilGenerator.Emit(OpCodes.Ldloc_S, arg);
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Loads the address of the local variable at a specific index onto the evaluation stack.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator Ldloca(this ILGenerator ilGenerator, LocalBuilder local) {
+			ilGenerator.Emit(OpCodes.Ldloca, local.LocalIndex);
+			return ilGenerator;
+		}
+
+		/// <summary>
 		/// Loads the address of the local variable at a specific index onto the evaluation stack.
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -1805,10 +1832,37 @@ namespace Missil {
 		}
 
 		/// <summary>
+		/// Loads the address of the local variable at a specific index onto the evaluation stack.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator Ldloca(this ILGenerator ilGenerator, int arg) {
+			ilGenerator.Emit(OpCodes.Ldloca, arg);
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Loads the address of the local variable at a specific index onto the evaluation stack, short form.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator Ldloca_S(this ILGenerator ilGenerator, LocalBuilder local) {
+			ilGenerator.Emit(OpCodes.Ldloca_S, local.LocalIndex);
+			return ilGenerator;
+		}
+
+		/// <summary>
 		/// Loads the address of the local variable at a specific index onto the evaluation stack, short form.
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Ldloca_S(this ILGenerator ilGenerator, byte arg) {
+			ilGenerator.Emit(OpCodes.Ldloca_S, arg);
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Loads the address of the local variable at a specific index onto the evaluation stack, short form.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator Ldloca_S(this ILGenerator ilGenerator, int arg) {
 			ilGenerator.Emit(OpCodes.Ldloca_S, arg);
 			return ilGenerator;
 		}
@@ -2395,6 +2449,15 @@ namespace Missil {
 		/// Pops the current value from the top of the evaluation stack and stores it in a the local variable list at a specified index.
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator Stloc(this ILGenerator ilGenerator, int arg) {
+			ilGenerator.Emit(OpCodes.Stloc, arg);
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Pops the current value from the top of the evaluation stack and stores it in a the local variable list at a specified index.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Stloc_X(this ILGenerator ilGenerator, short arg) {
 			switch (arg) {
 				case 0: ilGenerator.Emit(OpCodes.Stloc_0); break;
@@ -2456,6 +2519,15 @@ namespace Missil {
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Stloc_S(this ILGenerator ilGenerator, byte arg) {
+			ilGenerator.Emit(OpCodes.Stloc_S, arg);
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Pops the current value from the top of the evaluation stack and stores it in a the local variable list at index (short form).
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator Stloc_S(this ILGenerator ilGenerator, int arg) {
 			ilGenerator.Emit(OpCodes.Stloc_S, arg);
 			return ilGenerator;
 		}

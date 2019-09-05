@@ -918,6 +918,11 @@
             Loads the local variable at a specific index onto the evaluation stack.
             </summary>
         </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloc(System.Reflection.Emit.ILGenerator,System.Int32)">
+            <summary>
+            Loads the local variable at a specific index onto the evaluation stack.
+            </summary>
+        </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloc_X(System.Reflection.Emit.ILGenerator,System.Int16)">
             <summary>
             Loads the local variable at a specific index onto the evaluation stack.
@@ -953,12 +958,37 @@
             Loads the local variable at a specific index onto the evaluation stack, short form.
             </summary>
         </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloc_S(System.Reflection.Emit.ILGenerator,System.Int32)">
+            <summary>
+            Loads the local variable at a specific index onto the evaluation stack, short form.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloca(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.LocalBuilder)">
+            <summary>
+            Loads the address of the local variable at a specific index onto the evaluation stack.
+            </summary>
+        </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloca(System.Reflection.Emit.ILGenerator,System.Int16)">
             <summary>
             Loads the address of the local variable at a specific index onto the evaluation stack.
             </summary>
         </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloca(System.Reflection.Emit.ILGenerator,System.Int32)">
+            <summary>
+            Loads the address of the local variable at a specific index onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloca_S(System.Reflection.Emit.ILGenerator,System.Reflection.Emit.LocalBuilder)">
+            <summary>
+            Loads the address of the local variable at a specific index onto the evaluation stack, short form.
+            </summary>
+        </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloca_S(System.Reflection.Emit.ILGenerator,System.Byte)">
+            <summary>
+            Loads the address of the local variable at a specific index onto the evaluation stack, short form.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldloca_S(System.Reflection.Emit.ILGenerator,System.Int32)">
             <summary>
             Loads the address of the local variable at a specific index onto the evaluation stack, short form.
             </summary>
@@ -1275,6 +1305,11 @@
             Pops the current value from the top of the evaluation stack and stores it in a the local variable list at a specified index.
             </summary>
         </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stloc(System.Reflection.Emit.ILGenerator,System.Int32)">
+            <summary>
+            Pops the current value from the top of the evaluation stack and stores it in a the local variable list at a specified index.
+            </summary>
+        </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.Stloc_X(System.Reflection.Emit.ILGenerator,System.Int16)">
             <summary>
             Pops the current value from the top of the evaluation stack and stores it in a the local variable list at a specified index.
@@ -1306,6 +1341,11 @@
             </summary>
         </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.Stloc_S(System.Reflection.Emit.ILGenerator,System.Byte)">
+            <summary>
+            Pops the current value from the top of the evaluation stack and stores it in a the local variable list at index (short form).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Stloc_S(System.Reflection.Emit.ILGenerator,System.Int32)">
             <summary>
             Pops the current value from the top of the evaluation stack and stores it in a the local variable list at index (short form).
             </summary>
