@@ -1188,6 +1188,21 @@ namespace Missil {
 		}
 
 		/// <summary>
+		/// Loads an argument (referenced by a specified index value) onto the stack.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator Ldarg_X(this ILGenerator ilGenerator, short arg) {
+			switch (arg) {
+				case 0: ilGenerator.Emit(OpCodes.Ldarg_0); break;
+				case 1: ilGenerator.Emit(OpCodes.Ldarg_1); break;
+				case 2: ilGenerator.Emit(OpCodes.Ldarg_2); break;
+				case 3: ilGenerator.Emit(OpCodes.Ldarg_3); break;
+				default: ilGenerator.Emit(OpCodes.Ldarg, arg); break;
+			}
+			return ilGenerator;
+		}
+
+		/// <summary>
 		/// Loads the argument at index 0 onto the evaluation stack.
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -1256,6 +1271,27 @@ namespace Missil {
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Ldc_I4(this ILGenerator ilGenerator, int arg) {
 			ilGenerator.Emit(OpCodes.Ldc_I4, arg);
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Pushes a supplied value of type int32 onto the evaluation stack as an int32.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator Ldc_I4_X(this ILGenerator ilGenerator, int arg) {
+			switch (arg) {
+				case 0: ilGenerator.Emit(OpCodes.Ldc_I4_0); break;
+				case 1: ilGenerator.Emit(OpCodes.Ldc_I4_1); break;
+				case 2: ilGenerator.Emit(OpCodes.Ldc_I4_2); break;
+				case 3: ilGenerator.Emit(OpCodes.Ldc_I4_3); break;
+				case 4: ilGenerator.Emit(OpCodes.Ldc_I4_4); break;
+				case 5: ilGenerator.Emit(OpCodes.Ldc_I4_5); break;
+				case 6: ilGenerator.Emit(OpCodes.Ldc_I4_6); break;
+				case 7: ilGenerator.Emit(OpCodes.Ldc_I4_7); break;
+				case 8: ilGenerator.Emit(OpCodes.Ldc_I4_8); break;
+				case -1: ilGenerator.Emit(OpCodes.Ldc_I4_M1); break;
+				default: ilGenerator.Emit(OpCodes.Ldc_I4, arg); break;
+			}
 			return ilGenerator;
 		}
 
@@ -1670,6 +1706,21 @@ namespace Missil {
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Ldloc(this ILGenerator ilGenerator, short arg) {
 			ilGenerator.Emit(OpCodes.Ldloc, arg);
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Loads the local variable at a specific index onto the evaluation stack.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator Ldloc_X(this ILGenerator ilGenerator, short arg) {
+			switch (arg) {
+				case 0: ilGenerator.Emit(OpCodes.Ldloc_0); break;
+				case 1: ilGenerator.Emit(OpCodes.Ldloc_1); break;
+				case 2: ilGenerator.Emit(OpCodes.Ldloc_2); break;
+				case 3: ilGenerator.Emit(OpCodes.Ldloc_3); break;
+				default: ilGenerator.Emit(OpCodes.Ldloc, arg); break;
+			}
 			return ilGenerator;
 		}
 
@@ -2320,6 +2371,21 @@ namespace Missil {
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Stloc(this ILGenerator ilGenerator, short arg) {
 			ilGenerator.Emit(OpCodes.Stloc, arg);
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Pops the current value from the top of the evaluation stack and stores it in a the local variable list at a specified index.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator Stloc_X(this ILGenerator ilGenerator, short arg) {
+			switch (arg) {
+				case 0: ilGenerator.Emit(OpCodes.Stloc_0); break;
+				case 1: ilGenerator.Emit(OpCodes.Stloc_1); break;
+				case 2: ilGenerator.Emit(OpCodes.Stloc_2); break;
+				case 3: ilGenerator.Emit(OpCodes.Stloc_3); break;
+				default: ilGenerator.Emit(OpCodes.Stloc, arg); break;
+			}
 			return ilGenerator;
 		}
 
