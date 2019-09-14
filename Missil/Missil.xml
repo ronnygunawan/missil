@@ -344,6 +344,11 @@
             Calls the method indicated by the passed method descriptor.
             </summary>
         </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Call``1(System.Reflection.Emit.ILGenerator,System.String,System.Type[])">
+            <summary>
+            Calls the method indicated by the passed method descriptor.
+            </summary>
+        </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.Call(System.Reflection.Emit.ILGenerator,System.Reflection.MethodInfo,System.Type[])">
             <summary>
             Calls the method indicated by the passed method descriptor.
@@ -360,6 +365,11 @@
             </summary>
         </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.Callvirt(System.Reflection.Emit.ILGenerator,System.Reflection.MethodInfo)">
+            <summary>
+            Calls a late-bound method on an object, pushing the return value onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Callvirt``1(System.Reflection.Emit.ILGenerator,System.String,System.Type[])">
             <summary>
             Calls a late-bound method on an object, pushing the return value onto the evaluation stack.
             </summary>
@@ -1135,6 +1145,11 @@
             </summary>
         </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.Newobj(System.Reflection.Emit.ILGenerator,System.Reflection.ConstructorInfo)">
+            <summary>
+            Creates a new object or a new instance of a value type, pushing an object reference (type O) onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Newobj``1(System.Reflection.Emit.ILGenerator,System.Type[])">
             <summary>
             Creates a new object or a new instance of a value type, pushing an object reference (type O) onto the evaluation stack.
             </summary>

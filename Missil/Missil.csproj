@@ -4,7 +4,7 @@
     <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp2.2;netcoreapp3.0</TargetFrameworks>
     <Nullable>enable</Nullable>
     <PackageId>RG.Missil</PackageId>
-    <Version>1.0.10</Version>
+    <Version>1.0.11</Version>
     <Authors>Ronny Gunawan</Authors>
     <Product>RG.Missil</Product>
     <Description>Missil is a set of extension method for chaining ILGenerator.Emit(OpCode) calls.</Description>

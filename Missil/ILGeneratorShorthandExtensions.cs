@@ -642,6 +642,15 @@ namespace Missil {
 		/// Calls the method indicated by the passed method descriptor.
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator Call<T>(this ILGenerator ilGenerator, string methodName, params Type[] parameterTypes) {
+			ilGenerator.Emit(OpCodes.Call, typeof(T).GetMethod(methodName, parameterTypes));
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Calls the method indicated by the passed method descriptor.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Call(this ILGenerator ilGenerator, MethodInfo methodInfo, params Type[] optionalParameterTypes) {
 			ilGenerator.EmitCall(OpCodes.Call, methodInfo, optionalParameterTypes);
 			return ilGenerator;
@@ -673,6 +682,15 @@ namespace Missil {
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Callvirt(this ILGenerator ilGenerator, MethodInfo meth) {
 			ilGenerator.Emit(OpCodes.Callvirt, meth);
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Calls a late-bound method on an object, pushing the return value onto the evaluation stack.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator Callvirt<T>(this ILGenerator ilGenerator, string methodName, params Type[] parameterTypes) {
+			ilGenerator.Emit(OpCodes.Callvirt, typeof(T).GetMethod(methodName, parameterTypes));
 			return ilGenerator;
 		}
 
@@ -2094,6 +2112,15 @@ namespace Missil {
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Newobj(this ILGenerator ilGenerator, ConstructorInfo con) {
 			ilGenerator.Emit(OpCodes.Newobj, con);
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Creates a new object or a new instance of a value type, pushing an object reference (type O) onto the evaluation stack.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator Newobj<T>(this ILGenerator ilGenerator, params Type[] parameterTypes) {
+			ilGenerator.Emit(OpCodes.Newobj, typeof(T).GetConstructor(parameterTypes));
 			return ilGenerator;
 		}
 
