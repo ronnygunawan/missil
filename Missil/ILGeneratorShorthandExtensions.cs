@@ -5,6 +5,9 @@ using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 
 namespace Missil {
+	/// <summary>
+	/// A set of ILGenerator extension methods
+	/// </summary>
 	public static class ILGeneratorShorthandExtensions {
 
 		/// <summary>
@@ -1079,7 +1082,7 @@ namespace Missil {
 		}
 
 		/// <summary>
-		/// Copies the value type located at the address of an object (type &, or native int) to the address of the destination object (type &, or native int).
+		/// Copies the value type located at the address of an object (type &amp;, or native int) to the address of the destination object (type &amp;, or native int).
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Cpobj(this ILGenerator ilGenerator, Type cls) {
@@ -1088,7 +1091,7 @@ namespace Missil {
 		}
 
 		/// <summary>
-		/// Copies the value type located at the address of an object (type &, or native int) to the address of the destination object (type &, or native int).
+		/// Copies the value type located at the address of an object (type &amp;, or native int) to the address of the destination object (type &amp;, or native int).
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Cpobj<T>(this ILGenerator ilGenerator) {
@@ -1556,7 +1559,7 @@ namespace Missil {
 		}
 
 		/// <summary>
-		/// Loads the address of the array element at a specified array index onto the top of the evaluation stack as type & (managed pointer).
+		/// Loads the address of the array element at a specified array index onto the top of the evaluation stack as type &amp; (managed pointer).
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Ldelema(this ILGenerator ilGenerator, Type cls) {
@@ -1565,7 +1568,7 @@ namespace Missil {
 		}
 
 		/// <summary>
-		/// Loads the address of the array element at a specified array index onto the top of the evaluation stack as type & (managed pointer).
+		/// Loads the address of the array element at a specified array index onto the top of the evaluation stack as type &amp; (managed pointer).
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Ldelema<T>(this ILGenerator ilGenerator) {
@@ -2140,7 +2143,7 @@ namespace Missil {
 		}
 
 		/// <summary>
-		/// Retrieves the address (type &) embedded in a typed reference.
+		/// Retrieves the address (type &amp;) embedded in a typed reference.
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Refanyval(this ILGenerator ilGenerator, Type cls) {
@@ -2149,7 +2152,7 @@ namespace Missil {
 		}
 
 		/// <summary>
-		/// Retrieves the address (type &) embedded in a typed reference.
+		/// Retrieves the address (type &amp;) embedded in a typed reference.
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Refanyval<T>(this ILGenerator ilGenerator) {
@@ -2778,6 +2781,13 @@ namespace Missil {
 		public static ILGenerator Xor(this ILGenerator ilGenerator) {
 			ilGenerator.Emit(OpCodes.Xor);
 			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Calls an emitter action.
+		/// </summary>
+		public static ILGenerator Emit(this ILGenerator ilGenerator, Func<ILGenerator, ILGenerator> emitter) {
+			return emitter.Invoke(ilGenerator);
 		}
 	}
 }

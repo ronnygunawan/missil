@@ -4,6 +4,11 @@
         <name>Missil</name>
     </assembly>
     <members>
+        <member name="T:Missil.ILGeneratorShorthandExtensions">
+            <summary>
+            A set of ILGenerator extension methods
+            </summary>
+        </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.DeclareLocal(System.Reflection.Emit.ILGenerator,System.Type,System.Reflection.Emit.LocalBuilder@)">
             <summary>
             Declares a local variable of the specified type.
@@ -584,8 +589,16 @@
             Copies a specified number bytes from a source address to a destination address.
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Missil.ILGeneratorShorthandExtensions.Cpobj(System.Reflection.Emit.ILGenerator,System.Type)" -->
-        <!-- Badly formed XML comment ignored for member "M:Missil.ILGeneratorShorthandExtensions.Cpobj``1(System.Reflection.Emit.ILGenerator)" -->
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Cpobj(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Copies the value type located at the address of an object (type &amp;, or native int) to the address of the destination object (type &amp;, or native int).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Cpobj``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Copies the value type located at the address of an object (type &amp;, or native int) to the address of the destination object (type &amp;, or native int).
+            </summary>
+        </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.Div(System.Reflection.Emit.ILGenerator)">
             <summary>
             Divides two values and pushes the result as a floating-point (type F) or quotient (type int32) onto the evaluation stack.
@@ -831,8 +844,16 @@
             Loads the element with type unsigned int32 at a specified array index onto the top of the evaluation stack as an int32.
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Missil.ILGeneratorShorthandExtensions.Ldelema(System.Reflection.Emit.ILGenerator,System.Type)" -->
-        <!-- Badly formed XML comment ignored for member "M:Missil.ILGeneratorShorthandExtensions.Ldelema``1(System.Reflection.Emit.ILGenerator)" -->
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldelema(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Loads the address of the array element at a specified array index onto the top of the evaluation stack as type &amp; (managed pointer).
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Ldelema``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Loads the address of the array element at a specified array index onto the top of the evaluation stack as type &amp; (managed pointer).
+            </summary>
+        </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.Ldfld(System.Reflection.Emit.ILGenerator,System.Reflection.FieldInfo)">
             <summary>
             Finds the value of a field in the object whose reference is currently on the evaluation stack.
@@ -1143,8 +1164,16 @@
             Retrieves the type token embedded in a typed reference.
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Missil.ILGeneratorShorthandExtensions.Refanyval(System.Reflection.Emit.ILGenerator,System.Type)" -->
-        <!-- Badly formed XML comment ignored for member "M:Missil.ILGeneratorShorthandExtensions.Refanyval``1(System.Reflection.Emit.ILGenerator)" -->
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Refanyval(System.Reflection.Emit.ILGenerator,System.Type)">
+            <summary>
+            Retrieves the address (type &amp;) embedded in a typed reference.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Refanyval``1(System.Reflection.Emit.ILGenerator)">
+            <summary>
+            Retrieves the address (type &amp;) embedded in a typed reference.
+            </summary>
+        </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.Rem(System.Reflection.Emit.ILGenerator)">
             <summary>
             Divides two values and pushes the remainder onto the evaluation stack.
@@ -1468,6 +1497,11 @@
         <member name="M:Missil.ILGeneratorShorthandExtensions.Xor(System.Reflection.Emit.ILGenerator)">
             <summary>
             Computes the bitwise XOR of the top two values on the evaluation stack, pushing the result onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Emit(System.Reflection.Emit.ILGenerator,System.Func{System.Reflection.Emit.ILGenerator,System.Reflection.Emit.ILGenerator})">
+            <summary>
+            Calls an emitter action.
             </summary>
         </member>
     </members>
