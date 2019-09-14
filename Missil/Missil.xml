@@ -1501,6 +1501,11 @@
         </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.Emit(System.Reflection.Emit.ILGenerator,System.Func{System.Reflection.Emit.ILGenerator,System.Reflection.Emit.ILGenerator})">
             <summary>
+            Calls an emitter func.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Emit(System.Reflection.Emit.ILGenerator,System.Action{System.Reflection.Emit.ILGenerator})">
+            <summary>
             Calls an emitter action.
             </summary>
         </member>

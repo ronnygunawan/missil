@@ -2784,10 +2784,18 @@ namespace Missil {
 		}
 
 		/// <summary>
-		/// Calls an emitter action.
+		/// Calls an emitter func.
 		/// </summary>
 		public static ILGenerator Emit(this ILGenerator ilGenerator, Func<ILGenerator, ILGenerator> emitter) {
 			return emitter.Invoke(ilGenerator);
+		}
+
+		/// <summary>
+		/// Calls an emitter action.
+		/// </summary>
+		public static ILGenerator Emit(this ILGenerator ilGenerator, Action<ILGenerator> emitter) {
+			emitter.Invoke(ilGenerator);
+			return ilGenerator;
 		}
 	}
 }
