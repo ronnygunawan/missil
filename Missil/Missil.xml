@@ -359,11 +359,6 @@
             Calls the method indicated on the evaluation stack (as a pointer to an entry point) with arguments described by a calling convention.
             </summary>
         </member>
-        <member name="M:Missil.ILGeneratorShorthandExtensions.Calli(System.Reflection.Emit.ILGenerator,System.Runtime.InteropServices.CallingConvention,System.Type,System.Type[])">
-            <summary>
-            Calls the method indicated on the evaluation stack (as a pointer to an entry point) with arguments described by a calling convention.
-            </summary>
-        </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.Callvirt(System.Reflection.Emit.ILGenerator,System.Reflection.MethodInfo)">
             <summary>
             Calls a late-bound method on an object, pushing the return value onto the evaluation stack.
