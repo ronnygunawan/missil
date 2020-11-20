@@ -1,21 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-	<PropertyGroup>
-		<TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp2.2;netcoreapp3.0;netcoreapp3.1;net5.0</TargetFrameworks>
-		<Nullable>enable</Nullable>
-		<PackageId>RG.Missil</PackageId>
-		<Version>1.0.12</Version>
-		<Authors>Ronny Gunawan</Authors>
-		<Product>RG.Missil</Product>
-		<Description>Missil is a set of extension method for chaining ILGenerator.Emit(OpCode) calls.</Description>
-		<PackageProjectUrl>https://github.com/ronnygunawan/missil</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/ronnygunawan/missil</RepositoryUrl>
-		<PackageTags>missil msil il assembly reflection emit</PackageTags>
-		<Copyright>(c) 2019-2020 Ronny Gunawan</Copyright>
-		<PackageLicenseFile>LICENSE</PackageLicenseFile>
-		<PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	</PropertyGroup>
+  <PropertyGroup>
+    <TargetFrameworks>netstandard2.0;netstandard2.1;netcoreapp2.2;netcoreapp3.0;netcoreapp3.1;net5.0</TargetFrameworks>
+    <Nullable>enable</Nullable>
+    <PackageId>RG.Missil</PackageId>
+    <Version>1.0.13</Version>
+    <Authors>Ronny Gunawan</Authors>
+    <Product>RG.Missil</Product>
+    <Description>Missil is a set of extension method for chaining ILGenerator.Emit(OpCode) calls.</Description>
+    <PackageProjectUrl>https://github.com/ronnygunawan/missil</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/ronnygunawan/missil</RepositoryUrl>
+    <PackageTags>missil msil il assembly reflection emit</PackageTags>
+    <Copyright>(c) 2019-2020 Ronny Gunawan</Copyright>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
 
 	<PropertyGroup>
 		<DebugType>none</DebugType>

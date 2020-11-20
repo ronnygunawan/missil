@@ -354,7 +354,22 @@
             Calls the method indicated by the passed method descriptor.
             </summary>
         </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.CallPropertyGet``1(System.Reflection.Emit.ILGenerator,System.String)">
+            <summary>
+            Calls property getter.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.CallPropertySet``1(System.Reflection.Emit.ILGenerator,System.String)">
+            <summary>
+            Calls property setter.
+            </summary>
+        </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.Calli(System.Reflection.Emit.ILGenerator,System.Reflection.CallingConventions,System.Type,System.Type[],System.Type[])">
+            <summary>
+            Calls the method indicated on the evaluation stack (as a pointer to an entry point) with arguments described by a calling convention.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.Calli(System.Reflection.Emit.ILGenerator,System.Runtime.InteropServices.CallingConvention,System.Type,System.Type[])">
             <summary>
             Calls the method indicated on the evaluation stack (as a pointer to an entry point) with arguments described by a calling convention.
             </summary>
@@ -372,6 +387,16 @@
         <member name="M:Missil.ILGeneratorShorthandExtensions.Callvirt(System.Reflection.Emit.ILGenerator,System.Reflection.MethodInfo,System.Type[])">
             <summary>
             Calls a late-bound method on an object, pushing the return value onto the evaluation stack.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.CallvirtPropertyGet``1(System.Reflection.Emit.ILGenerator,System.String)">
+            <summary>
+            Calls late-bound property getter.
+            </summary>
+        </member>
+        <member name="M:Missil.ILGeneratorShorthandExtensions.CallvirtPropertySet``1(System.Reflection.Emit.ILGenerator,System.String)">
+            <summary>
+            Calls late-bound property setter.
             </summary>
         </member>
         <member name="M:Missil.ILGeneratorShorthandExtensions.Castclass(System.Reflection.Emit.ILGenerator,System.Type)">

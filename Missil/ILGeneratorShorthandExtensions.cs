@@ -657,6 +657,24 @@ namespace Missil {
 		}
 
 		/// <summary>
+		/// Calls property getter.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator CallPropertyGet<T>(this ILGenerator ilGenerator, string propertyName) {
+			ilGenerator.Emit(OpCodes.Call, typeof(T).GetProperty(propertyName).GetGetMethod());
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Calls property setter.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator CallPropertySet<T>(this ILGenerator ilGenerator, string propertyName) {
+			ilGenerator.Emit(OpCodes.Call, typeof(T).GetProperty(propertyName).GetSetMethod());
+			return ilGenerator;
+		}
+
+		/// <summary>
 		/// Calls the method indicated on the evaluation stack (as a pointer to an entry point) with arguments described by a calling convention.
 		/// </summary>
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
@@ -700,6 +718,24 @@ namespace Missil {
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
 		public static ILGenerator Callvirt(this ILGenerator ilGenerator, MethodInfo methodInfo, params Type[] optionalParameterTypes) {
 			ilGenerator.EmitCall(OpCodes.Callvirt, methodInfo, optionalParameterTypes);
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Calls late-bound property getter.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator CallvirtPropertyGet<T>(this ILGenerator ilGenerator, string propertyName) {
+			ilGenerator.Emit(OpCodes.Callvirt, typeof(T).GetProperty(propertyName).GetGetMethod());
+			return ilGenerator;
+		}
+
+		/// <summary>
+		/// Calls late-bound property setter.
+		/// </summary>
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ILGenerator CallvirtPropertySet<T>(this ILGenerator ilGenerator, string propertyName) {
+			ilGenerator.Emit(OpCodes.Callvirt, typeof(T).GetProperty(propertyName).GetSetMethod());
 			return ilGenerator;
 		}
 
