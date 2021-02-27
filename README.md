@@ -1,4 +1,4 @@
-[![NuGet](https://img.shields.io/nuget/v/RG.Missil.svg)](https://www.nuget.org/packages/RG.Missil/)
+[![NuGet](https://img.shields.io/nuget/v/RG.Missil.svg)](https://www.nuget.org/packages/RG.Missil/) [![.NET](https://github.com/ronnygunawan/missil/actions/workflows/dotnet.yml/badge.svg)](https://github.com/ronnygunawan/missil/actions/workflows/dotnet.yml)
 
 # Missil - MSIL Emit Helper
 
